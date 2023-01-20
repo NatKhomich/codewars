@@ -13,3 +13,11 @@ function solution(str){
   return newString;
 }
 solution('hello')
+//Задача 3
+function sum (numbers) {
+  "use strict";
+  let sum=0;
+for (let i=0; i< numbers.length; i++)
+  sum+=numbers[i]
+  return sum;
+};
