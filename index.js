@@ -3,7 +3,6 @@ function mango(quantity, price){
     const gift = quantity - Math.floor(quantity / 3);
       return gift*price;
     }
-    
 //Задача 2
 function solution(str){
   let newString = ''
@@ -28,4 +27,3 @@ function past(h, m, s){
  const convertSeconds = s * 1000;
  return convertHours + convertMinutes + convertSeconds;
  }
- 
