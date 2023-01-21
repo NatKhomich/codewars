@@ -27,3 +27,17 @@ function past(h, m, s){
  const convertSeconds = s * 1000;
  return convertHours + convertMinutes + convertSeconds;
  }
+//Задача 5
+ function opposite(number) {
+  return -number
+}
+//Задача 6
+function areYouPlayingBanjo(name) {
+  if (name[0] ==='r' || name[0] ==='R') {
+    return `${name} plays banjo`
+  } else  { 
+    return`${name} does not play banjo`
+  }
+  return name;
+}
+//Задача 7
