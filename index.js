@@ -59,7 +59,35 @@ const rps = (p1, p2) => {
   }
 };
 //Задача 9
-function booleanToString(b){
+function booleanToString(b) {
   //your code here
-  return b+''
+  return b + "";
 }
+//Задача 10
+function myWorld(a = "hello", b = " world") {
+  return a + b;
+}
+myWorld();
+//Задача 11
+function greet(name, owner) {
+  // Add code here
+  if (name === owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
+}
+//Задача 12
+function boolToWord( bool ){
+  if (bool ===true){
+    return 'Yes'
+  } else {
+    return 'No'
+  }
+}
+//Задача 13
+const stringToNumber = function(str){
+  const transform = Number.parseInt(str)
+    return transform;
+  }
+
