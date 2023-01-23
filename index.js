@@ -58,3 +58,8 @@ const rps = (p1, p2) => {
     return `Player 2 won!`;
   }
 };
+//Задача 9
+function booleanToString(b){
+  //your code here
+  return b+''
+}
