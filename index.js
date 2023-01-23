@@ -90,4 +90,12 @@ const stringToNumber = function(str){
   const transform = Number.parseInt(str)
     return transform;
   }
+//Задача 14 
+function evenOrOdd(number) {
+  if (number % 2 ==0  ) {
+    return 'Even'
+  } else {
+    return 'Odd'
+  }
+}
 
