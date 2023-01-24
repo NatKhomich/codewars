@@ -105,4 +105,9 @@ function invert(array) {
    }
   return array;
   } 
+//Задача 16
+function litres(time) {
+  let water = Math.floor(time/2)
+  return water;
+}
 
