@@ -98,4 +98,11 @@ function evenOrOdd(number) {
     return 'Odd'
   }
 }
+//Задача 15
+function invert(array) {
+  for(let i = 0; i < array.length; i++) {
+  array[i] *= -1;
+   }
+  return array;
+  } 
 
