@@ -110,4 +110,12 @@ function litres(time) {
   let water = Math.floor(time/2)
   return water;
 }
-
+//Задача 17
+function makeNegative(num) {
+  if (num>0){
+    return -num;
+  }else {
+    return num;
+  }
+}
+//
