@@ -126,4 +126,8 @@ var summation = function (num) {
   }
   return sum;
 };
+//Задача 19
+function doubleInteger(i) {
+  return i*2;
+}
 //
