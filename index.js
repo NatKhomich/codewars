@@ -78,44 +78,52 @@ function greet(name, owner) {
   }
 }
 //Задача 12
-function boolToWord( bool ){
-  if (bool ===true){
-    return 'Yes'
+function boolToWord(bool) {
+  if (bool === true) {
+    return "Yes";
   } else {
-    return 'No'
+    return "No";
   }
 }
 //Задача 13
-const stringToNumber = function(str){
-  const transform = Number.parseInt(str)
-    return transform;
-  }
-//Задача 14 
+const stringToNumber = function (str) {
+  const transform = Number.parseInt(str);
+  return transform;
+};
+//Задача 14
 function evenOrOdd(number) {
-  if (number % 2 ==0  ) {
-    return 'Even'
+  if (number % 2 == 0) {
+    return "Even";
   } else {
-    return 'Odd'
+    return "Odd";
   }
 }
 //Задача 15
 function invert(array) {
-  for(let i = 0; i < array.length; i++) {
-  array[i] *= -1;
-   }
+  for (let i = 0; i < array.length; i++) {
+    array[i] *= -1;
+  }
   return array;
-  } 
+}
 //Задача 16
 function litres(time) {
-  let water = Math.floor(time/2)
+  let water = Math.floor(time / 2);
   return water;
 }
 //Задача 17
 function makeNegative(num) {
-  if (num>0){
+  if (num > 0) {
     return -num;
-  }else {
+  } else {
     return num;
   }
 }
+//Задача 18
+var summation = function (num) {
+  let sum = 0;
+  for (i = num; i >= 1; i--) {
+    sum += i;
+  }
+  return sum;
+};
 //
