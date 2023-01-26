@@ -85,12 +85,12 @@ function boolToWord(bool) {
     return "No";
   }
 }
-//Задача 13
+//Задача 13 
 const stringToNumber = function (str) {
   const transform = Number.parseInt(str);
   return transform;
 };
-//Задача 14
+//Задача 14 Вернуть четное число 
 function evenOrOdd(number) {
   if (number % 2 == 0) {
     return "Even";
@@ -98,19 +98,19 @@ function evenOrOdd(number) {
     return "Odd";
   }
 }
-//Задача 15
+//Задача 15 Вернуть противоположные числа в массиве
 function invert(array) {
   for (let i = 0; i < array.length; i++) {
     array[i] *= -1;
   }
   return array;
 }
-//Задача 16
+//Задача 16 За 1км выпивает 0.5 литра. Узнать сколько выпьет и окр до целого числа
 function litres(time) {
   let water = Math.floor(time / 2);
   return water;
 }
-//Задача 17
+//Задача 17 Если число положительное вернуть отрицательное
 function makeNegative(num) {
   if (num > 0) {
     return -num;
@@ -118,7 +118,7 @@ function makeNegative(num) {
     return num;
   }
 }
-//Задача 18
+//Задача 18 Найти сумму всех чисел до вводимого (3= 1+2+3)
 var summation = function (num) {
   let sum = 0;
   for (i = num; i >= 1; i--) {
@@ -126,15 +126,15 @@ var summation = function (num) {
   }
   return sum;
 };
-//Задача 19
+//Задача 19 Число * на 2
 function doubleInteger(i) {
   return i * 2;
 }
-//Задача 20
+//Задача 20 Удалить пробелы мд символами в строке
 function noSpace(x) {
   return x.replace(/\s/g, "");
 }
-//Задача 21
+//Задача 21 Четное число * на 8, нечетное на 9
 function simpleMultiplication(number) {
   if (number % 2 == 0) {
     return number * 8;
@@ -158,7 +158,7 @@ function points(games) {
   }
   return points;
 }
-//Задача 23
+//Задача 23 
 function rentalCarCost(d) {
   let price = 40;
   if (d >= 3 && d < 7) {
@@ -169,7 +169,7 @@ function rentalCarCost(d) {
     return d * price;
   }
 }
-//Задача 24
+//Задача 24 Преобразовать строку в число и сложить
 function sumMix(x) {
   let sum = 0;
   for (let i = 0; i < x.length; i++) {
@@ -180,8 +180,11 @@ function sumMix(x) {
   }
   return sum;
 }
-//Задача 25
+//Задача 25 Разбить строку на массив слов
 function stringToArray(string) {
   return string.split(" ");
 }
-//
+//Задача 26 Перемножить массив
+function grow(x) {
+  return x.reduce((a, b) => a * b);
+}
