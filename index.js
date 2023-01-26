@@ -180,3 +180,8 @@ function sumMix(x) {
   }
   return sum;
 }
+//Задача 25
+function stringToArray(string) {
+  return string.split(" ");
+}
+//
