@@ -158,3 +158,15 @@ function points(games) {
   }
   return points;
 }
+//Задача 23
+function rentalCarCost(d) {
+  let price = 40;
+  if (d >= 3 && d < 7) {
+    return d * price - 20;
+  } else if (d >= 7) {
+    return d * price - 50;
+  } else {
+    return d * price;
+  }
+}
+//
