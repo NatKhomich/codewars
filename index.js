@@ -128,10 +128,17 @@ var summation = function (num) {
 };
 //Задача 19
 function doubleInteger(i) {
-  return i*2;
+  return i * 2;
 }
 //Задача 20
-function noSpace(x){
-  return x.replace(/\s/g,'');
+function noSpace(x) {
+  return x.replace(/\s/g, "");
 }
-//
+//Задача 21
+function simpleMultiplication(number) {
+  if (number % 2 == 0) {
+    return number * 8;
+  } else {
+    return number * 9;
+  }
+}
