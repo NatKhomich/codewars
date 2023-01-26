@@ -169,4 +169,14 @@ function rentalCarCost(d) {
     return d * price;
   }
 }
-//
+//Задача 24
+function sumMix(x) {
+  let sum = 0;
+  for (let i = 0; i < x.length; i++) {
+    if (typeof x[i] === "string") {
+      x[i] = Number(x[i]);
+    }
+    sum += x[i];
+  }
+  return sum;
+}
