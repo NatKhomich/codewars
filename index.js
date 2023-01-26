@@ -130,4 +130,8 @@ var summation = function (num) {
 function doubleInteger(i) {
   return i*2;
 }
+//Задача 20
+function noSpace(x){
+  return x.replace(/\s/g,'');
+}
 //
