@@ -1,9 +1,9 @@
-//Задача 1
+//Задача 1 Рассчитать стоимость по акции 3+1
 function mango(quantity, price) {
   const gift = quantity - Math.floor(quantity / 3);
   return gift * price;
 }
-//Задача 2
+//Задача 2 Перебрать эл строки в обр порядке "red">"der"
 function solution(str) {
   let newString = "";
   for (var i = str.length - 1; i >= 0; i--) {
@@ -12,25 +12,25 @@ function solution(str) {
   return newString;
 }
 solution("hello");
-//Задача 3
+//Задача 3 Вернуть сумму чисел массива
 function sum(numbers) {
   "use strict";
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) sum += numbers[i];
   return sum;
 }
-//Задача 4
+//Задача 4 Вернуть время с полуночи в миллисекундах
 function past(h, m, s) {
   const convertHours = h * 60 * 60 * 1000;
   const convertMinutes = m * 60 * 1000;
   const convertSeconds = s * 1000;
   return convertHours + convertMinutes + convertSeconds;
 }
-//Задача 5
+//Задача 5 Найти противоположность числу
 function opposite(number) {
   return -number;
 }
-//Задача 6
+//Задача 6 Если имя на r R вернуть имя+играет на бонжо
 function areYouPlayingBanjo(name) {
   if (name[0] === "r" || name[0] === "R") {
     return `${name} plays banjo`;
@@ -39,11 +39,11 @@ function areYouPlayingBanjo(name) {
   }
   return name;
 }
-//Задача 7
+//Задача 7 Вернуть предложение из массова слов
 function smash(words) {
   return words.join(" ");
 }
-//Задача 8
+//Задача 8 Вернуть какой игрок выиграет
 const rps = (p1, p2) => {
   if (p1 === p2) {
     return "Draw!";
@@ -58,26 +58,24 @@ const rps = (p1, p2) => {
     return `Player 2 won!`;
   }
 };
-//Задача 9
+//Задача 9 Преобразовать true в "true"
 function booleanToString(b) {
-  //your code here
   return b + "";
 }
-//Задача 10
+//Задача 10 Сложить слова в строку
 function myWorld(a = "hello", b = " world") {
   return a + b;
 }
 myWorld();
-//Задача 11
+//Задача 11 Персонализированное приветствие
 function greet(name, owner) {
-  // Add code here
   if (name === owner) {
     return "Hello boss";
   } else {
     return "Hello guest";
   }
 }
-//Задача 12
+//Задача 12 Вернуть yes если true и no если false
 function boolToWord(bool) {
   if (bool === true) {
     return "Yes";
@@ -85,7 +83,7 @@ function boolToWord(bool) {
     return "No";
   }
 }
-//Задача 13 
+//Задача 13 Преобразовать строку в число
 const stringToNumber = function (str) {
   const transform = Number.parseInt(str);
   return transform;
