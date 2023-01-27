@@ -210,7 +210,7 @@ const areaOrPerimeter = function (l, w) {
 const areaOrPerimeter2 = function (l, w) {
   return l === w ? l * w : 2 * (l + w);
 };
-//Задача 29
+//Задача 29 Сложить положит числа в массиве
 function positiveSum(arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -220,4 +220,17 @@ function positiveSum(arr) {
   }
   return sum;
 }
-//
+//Задача 30 Объем прямоугольного параллелепипеда
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
+//Задача 31 
+function hoopCount (n) {
+  if (n>=10) {
+    return 'Great, now move on to tricks';
+  } else {
+    return 'Keep at it until you get it';
+  }
+}
