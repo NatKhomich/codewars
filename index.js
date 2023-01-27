@@ -198,3 +198,11 @@ const quarterOf = (month) => {
     return 4;
   }
 };
+//Задача 28 Если квадрат вернуть площадь, если прямоуг - периметр
+const areaOrPerimeter = function (l, w) {
+  if (l === w) {
+    return l * w;
+  } else {
+    return 2 * (l + w);
+  }
+};
