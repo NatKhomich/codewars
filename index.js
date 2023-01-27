@@ -207,7 +207,17 @@ const areaOrPerimeter = function (l, w) {
   }
 };
 //или
-const areaOrPerimeter2 = function(l , w) {
-  return l == w ? l*w : 2*(l + w)
+const areaOrPerimeter2 = function (l, w) {
+  return l === w ? l * w : 2 * (l + w);
 };
+//Задача 29
+function positiveSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
 //
