@@ -226,11 +226,21 @@ class Kata {
     return length * width * height;
   }
 }
-//Задача 31 
-function hoopCount (n) {
-  if (n>=10) {
-    return 'Great, now move on to tricks';
+//Задача 31 Вернуть нужную строку при выполненном условии
+function hoopCount(n) {
+  if (n >= 10) {
+    return "Great, now move on to tricks";
   } else {
-    return 'Keep at it until you get it';
+    return "Keep at it until you get it";
   }
 }
+// Задача 32 За сколько лет увелич население при вводных
+function nbYear(p0, percent, aug, p) {
+  let totalYear = 0;
+  while (p0 < p) {
+    p0 += p0 * (percent * 0.01) + aug;
+    totalYear++;
+  }
+  return totalYear;
+}
+//
