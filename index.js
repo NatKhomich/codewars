@@ -88,7 +88,7 @@ const stringToNumber = function (str) {
   const transform = Number.parseInt(str);
   return transform;
 };
-//Задача 14 Вернуть четное число 
+//Задача 14 Вернуть четное число
 function evenOrOdd(number) {
   if (number % 2 == 0) {
     return "Even";
@@ -156,7 +156,7 @@ function points(games) {
   }
   return points;
 }
-//Задача 23 
+//Задача 23
 function rentalCarCost(d) {
   let price = 40;
   if (d >= 3 && d < 7) {
@@ -186,3 +186,15 @@ function stringToArray(string) {
 function grow(x) {
   return x.reduce((a, b) => a * b);
 }
+//Задача 27 Вернуть к какому кварталу принадлежит месяц
+const quarterOf = (month) => {
+  if (month == 1 || month == 2 || month == 3) {
+    return 1;
+  } else if (month == 4 || month == 5 || month == 6) {
+    return 2;
+  } else if (month == 7 || month == 8 || month == 9) {
+    return 3;
+  } else {
+    return 4;
+  }
+};
