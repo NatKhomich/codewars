@@ -238,7 +238,7 @@ function hoopCount(n) {
 function nbYear(p0, percent, aug, p) {
   let totalYear = 0;
   while (p0 < p) {
-    p0 += p0 * (percent * 0.01) + aug;
+    p0 = Math.trunc(p0 + (p0 * percent) / 100 + aug);
     totalYear++;
   }
   return totalYear;
