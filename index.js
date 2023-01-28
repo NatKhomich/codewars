@@ -263,3 +263,8 @@ function howMuchILoveYou(nbPetals) {
     return "not at all";
   }
 }
+//Задача 35 Вернуть четные числа
+function testEven(n) {
+  return n % 2 == 0 ? true : false;
+}
+//
