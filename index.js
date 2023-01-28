@@ -271,4 +271,8 @@ function testEven(n) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
-//
+//Задача 37 Удалить первый и последний символ строки
+function removeChar(str){
+  return str.slice(1,-1);
+ };
+ //
