@@ -267,4 +267,8 @@ function howMuchILoveYou(nbPetals) {
 function testEven(n) {
   return n % 2 == 0 ? true : false;
 }
+//Задача 36 Сложить количество голлов в чемпионате
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
 //
