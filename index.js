@@ -288,4 +288,12 @@ function bmi(weight, height) {
     return "Obese";
   }
 }
-//
+//Задача 39 Рассчитать кол мест в автобусе при вводных
+function enough(cap, on, wait) {
+  let place = cap - on;
+  if (place >= wait) {
+    return 0;
+  } else {
+    return wait + on - cap;
+  }
+}
