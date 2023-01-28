@@ -272,9 +272,20 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 //Задача 37 Удалить первый и последний символ строки
-function removeChar(str){
-  return str.slice(1,-1);
- };
- //
- 
-
+function removeChar(str) {
+  return str.slice(1, -1);
+}
+//Задача 38 Найти индекс массы тела и вернуть результат
+function bmi(weight, height) {
+  let indexMassBody = weight / Math.pow(height, 2);
+  if (indexMassBody <= 18.5) {
+    return "Underweight";
+  } else if (indexMassBody <= 25.0) {
+    return "Normal";
+  } else if (indexMassBody <= 30.0) {
+    return "Overweight";
+  } else {
+    return "Obese";
+  }
+}
+//
