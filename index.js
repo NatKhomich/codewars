@@ -243,4 +243,8 @@ function nbYear(p0, percent, aug, p) {
   }
   return totalYear;
 }
+//Задача 33 Убрать ! из строки 
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, "");
+}
 //
