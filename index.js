@@ -297,7 +297,7 @@ function enough(cap, on, wait) {
     return wait + on - cap;
   }
 }
-//Задача 40 Вернуть возраст человека, кошки и собаки 
+//Задача 40 Вернуть возраст человека, кошки и собаки
 var humanYearsCatYearsDogYears = function (humanYears) {
   let catYears = 0;
   let dogYears = 0;
@@ -312,5 +312,13 @@ var humanYearsCatYearsDogYears = function (humanYears) {
     dogYears = 5 * (humanYears - 2) + 24;
   }
   return [humanYears, catYears, dogYears];
+};
+//Задача 41 Считать овец
+var countSheep = function (num) {
+  let str = "";
+  for (let i = 1; i <= num; i++) {
+    str += `${i} sheep...`;
+  }
+  return str;
 };
 //
