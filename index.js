@@ -377,12 +377,20 @@ function otherAngle(a, b) {
 function checkForFactor(base, factor) {
   return base % factor == 0 ? true : false;
 }
-//Задача 47 
+//Задача 47
 function paperwork(n, m) {
-  if (n<0||m<0) {
+  if (n < 0 || m < 0) {
     return 0;
   } else {
-    return n*m
+    return n * m;
+  }
+}
+//Задача 48 Если работаю true, если отпуск false
+function setAlarm(employed, vacation) {
+  if (employed && !vacation) {
+    return true;
+  } else {
+    return false;
   }
 }
 //
