@@ -373,8 +373,16 @@ function hero(bullets, dragons) {
 function otherAngle(a, b) {
   return 180 - (a + b);
 }
-//задача 46 Найти множитель числа
+//Задача 46 Найти множитель числа
 function checkForFactor(base, factor) {
   return base % factor == 0 ? true : false;
+}
+//Задача 47 
+function paperwork(n, m) {
+  if (n<0||m<0) {
+    return 0;
+  } else {
+    return n*m
+  }
 }
 //
