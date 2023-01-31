@@ -393,4 +393,8 @@ function setAlarm(employed, vacation) {
     return false;
   }
 }
+//Задача 49 Вернуть строку
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
 //
