@@ -365,4 +365,8 @@ function switchItUp(number) {
       return "Enter a number between 0 and 9";
   }
 }
+//Задача 44 На 1 дракона 2 пули. Вернуть true или false
+function hero(bullets, dragons) {
+  return bullets >= dragons * 2 ? true : false;
+}
 //
