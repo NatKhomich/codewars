@@ -369,4 +369,8 @@ function switchItUp(number) {
 function hero(bullets, dragons) {
   return bullets >= dragons * 2 ? true : false;
 }
+//Задача 45 Найти третий угол треугольника
+function otherAngle(a, b) {
+  return 180-(a+b);
+}
 //
