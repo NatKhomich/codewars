@@ -371,6 +371,10 @@ function hero(bullets, dragons) {
 }
 //Задача 45 Найти третий угол треугольника
 function otherAngle(a, b) {
-  return 180-(a+b);
+  return 180 - (a + b);
+}
+//задача 46 Найти множитель числа
+function checkForFactor(base, factor) {
+  return base % factor == 0 ? true : false;
 }
 //
