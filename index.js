@@ -406,3 +406,9 @@ function maps(x) {
 function numberToString(num) {
   return num + "";
 }
+//или 
+function numberToString(num) {
+  return String(num);
+}
+//
+
