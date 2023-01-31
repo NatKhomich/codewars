@@ -321,4 +321,12 @@ var countSheep = function (num) {
   }
   return str;
 };
+//Задача 42 Вернуть сумму чисел
+function getSum(a, b) {
+  if (a == b) {
+    return a;
+  } else {
+    return a + b;
+  }
+}
 //
