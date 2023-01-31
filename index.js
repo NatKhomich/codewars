@@ -394,7 +394,13 @@ function setAlarm(employed, vacation) {
   }
 }
 //Задача 49 Вернуть строку
-function greet(name){
-  return `Hello, ${name} how are you doing today?`
+function greet(name) {
+  return `Hello, ${name} how are you doing today?`;
+}
+//Задача 50 Каждый эл массива * на 2
+function maps(x) {
+  let result = x.map((el) => el * 2);
+  return result;
 }
 //
+
