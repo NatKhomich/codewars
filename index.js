@@ -321,12 +321,21 @@ var countSheep = function (num) {
   }
   return str;
 };
-//Задача 42 Вернуть сумму чисел
+//Задача 42 Вернуть сумму чисел между ними (числа + или -)
 function getSum(a, b) {
   if (a == b) {
     return a;
+  } else if (a < b) {
+    max = b;
+    min = a;
   } else {
-    return a + b;
+    max = a;
+    min = b;
   }
+  let sum = 0;
+  for (let i = min; i <= max; i++) {
+    sum += i;
+  }
+  return sum;
 }
 //
