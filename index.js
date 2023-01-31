@@ -402,5 +402,7 @@ function maps(x) {
   let result = x.map((el) => el * 2);
   return result;
 }
-//
-
+//Задача 51 Число в строку
+function numberToString(num) {
+  return num + "";
+}
