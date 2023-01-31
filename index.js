@@ -410,5 +410,8 @@ function numberToString(num) {
 function numberToString(num) {
   return String(num);
 }
+//Задача 52 Вернуть столетие по году
+function century(year) {
+  return Math.ceil(year / 100);
+}
 //
-
