@@ -414,9 +414,12 @@ function numberToString(num) {
 function century(year) {
   return Math.ceil(year / 100);
 }
-//Задача 53 Найти разницу обемов параллелепипеда
+//Задача 53 Найти разницу объемов параллелепипеда
 function findDifference(a, b) {
   return Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
 }
+//Задача 54 Перевести км/ч в м/с и округлить до меньшего целого
+function cockroachSpeed(s) {
+  return Math.floor(s / 0.036);
+}
 //
-
