@@ -406,7 +406,7 @@ function maps(x) {
 function numberToString(num) {
   return num + "";
 }
-//или 
+//или
 function numberToString(num) {
   return String(num);
 }
@@ -414,4 +414,9 @@ function numberToString(num) {
 function century(year) {
   return Math.ceil(year / 100);
 }
+//Задача 53 Найти разницу обемов параллелепипеда
+function findDifference(a, b) {
+  return Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
+}
 //
+
