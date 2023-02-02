@@ -458,4 +458,13 @@ function check(a, x) {
 function greet(world) {
   return "hello world!";
 }
+//Задача 60 Каждый символ повт 2 раза abc = aabbcc
+function doubleChar(str) {
+  let newStr = "";
+  for (let i = 0; i < str.length; i++) {
+    newStr += str[i] += str[i];
+  }
+  return newStr;
+}
 //
+
