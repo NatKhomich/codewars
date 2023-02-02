@@ -443,5 +443,11 @@ function stray(numbers) {
     return arr[arr.length - 1];
   }
 }
+//Задача 57 Вернуть true если одно число положительное, другое отрицательное
+function lovefunc(flower1, flower2) {
+  return (flower1 % 2 == 0 && flower2 % 2 == 1) ||
+    (flower2 % 2 == 0 && flower1 % 2 == 1)
+    ? true
+    : false;
+}
 //
-
