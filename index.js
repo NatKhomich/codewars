@@ -454,4 +454,8 @@ function lovefunc(flower1, flower2) {
 function check(a, x) {
   return a.includes(x) ? true : false;
 }
+//Задача 59 Ф-я возвращ строку привет мир
+function greet(world) {
+  return "hello world!";
+}
 //
