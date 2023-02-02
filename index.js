@@ -477,5 +477,8 @@ function removeEveryOther(arr) {
 function sortByLength(array) {
   return array.sort((a, b) => a.length - b.length);
 }
+//Задача 63 Определить существует ли треугольник
+function isTriangle(a, b, c) {
+  return a + b > c && b + c > a && c + a > b ? true : false;
+}
 //
-
