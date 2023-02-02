@@ -422,4 +422,12 @@ function findDifference(a, b) {
 function cockroachSpeed(s) {
   return Math.floor(s / 0.036);
 }
+//Задача 55 Ф-я возвращает s повторяющееся n раз
+function repeatStr(n, s) {
+  let result = "";
+  for (let i = 0; i < n; i++) {
+    result += s;
+  }
+  return result;
+}
 //
