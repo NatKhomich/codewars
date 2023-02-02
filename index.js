@@ -450,4 +450,8 @@ function lovefunc(flower1, flower2) {
     ? true
     : false;
 }
+//Задача 58 Проверить содержит ли массив а знаение х
+function check(a, x) {
+  return a.includes(x) ? true : false;
+}
 //
