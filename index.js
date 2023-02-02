@@ -434,4 +434,14 @@ function repeatStr(n, s) {
 function repeatStr(n, s) {
   return s.repeat(n);
 }
+//Задача 56 Отсортировать массив и вернуть единственое число отличное от всех элементов массива
+function stray(numbers) {
+  let arr = numbers.sort();
+  if (arr[0] !== arr[1]) {
+    return arr[0];
+  } else {
+    return arr[arr.length - 1];
+  }
+}
 //
+
