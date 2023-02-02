@@ -466,5 +466,12 @@ function doubleChar(str) {
   }
   return newStr;
 }
+//Задача 61 Удалить каждый второй элемент массива
+function removeEveryOther(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    arr.splice(i, 1);
+  }
+  return arr;
+}
 //
 
