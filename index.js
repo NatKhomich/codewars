@@ -430,4 +430,8 @@ function repeatStr(n, s) {
   }
   return result;
 }
+//или
+function repeatStr(n, s) {
+  return s.repeat(n);
+}
 //
