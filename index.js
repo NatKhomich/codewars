@@ -473,5 +473,9 @@ function removeEveryOther(arr) {
   }
   return arr;
 }
+//Задача 62 Отсортировать массив по длине строки
+function sortByLength(array) {
+  return array.sort((a, b) => a.length - b.length);
+}
 //
 
