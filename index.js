@@ -507,17 +507,30 @@ function strCount(str, letter) {
 //Задача 66 Найти наибольший результат используя *+()
 function expressionMatter(a, b, c) {
   return Math.max(
-   a + b + c,
+    a + b + c,
     a + b * c,
     (a + b) * c,
     a * b * c,
     a * b + c,
-    a * (b + c),
+    a * (b + c)
   );
 }
 //Задача 67 Яв-ся ли n квадратом
-var isSquare = function(n){
+var isSquare = function (n) {
   let result = Math.sqrt(n);
-  return (result%1==0)
+  return result % 1 == 0;
+};
+//Задача 68 Найти наименьшее число в массиве
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let result = args[0];
+    for (let i = 0; i < args.length; i++) {
+      if (args[i] < result) {
+        result = args[i];
+      }
+    }
+    return result;
   }
+}
 //
+
