@@ -515,5 +515,9 @@ function expressionMatter(a, b, c) {
     a * (b + c),
   );
 }
+//Задача 67 Яв-ся ли n квадратом
+var isSquare = function(n){
+  let result = Math.sqrt(n);
+  return (result%1==0)
+  }
 //
-
