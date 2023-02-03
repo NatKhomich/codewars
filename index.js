@@ -504,5 +504,16 @@ function strCount(str, letter) {
   }
   return result;
 }
+//Задача 66 Найти наибольший результат используя *+()
+function expressionMatter(a, b, c) {
+  return Math.max(
+   a + b + c,
+    a + b * c,
+    (a + b) * c,
+    a * b * c,
+    a * b + c,
+    a * (b + c),
+  );
+}
 //
 
