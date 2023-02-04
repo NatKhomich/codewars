@@ -544,3 +544,22 @@ function findNeedle(haystack) {
 function grow(x) {
   return x.reduce((a, b) => a * b);
 }
+//Задача 71 Отсортировать массив по возрастанию, если null вернуть []
+function solution(nums) {
+  if (nums !== null) {
+    return nums.sort((a, b) => a - b);
+  } else {
+    return [];
+  }
+}
+//Задача 72 Посчитать количество true в массиве
+function countSheeps(arrayOfSheep) {
+  let result = 0;
+  for (let i = 0; i < arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] === true) {
+      result += 1;
+    }
+  }
+  return result;
+}
+//
