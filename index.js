@@ -540,5 +540,7 @@ function findNeedle(haystack) {
     }
   }
 }
-//
-
+//Задача 70 Перемножить числа в массиве
+function grow(x) {
+  return x.reduce((a, b) => a * b);
+}
