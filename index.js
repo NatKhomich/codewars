@@ -562,4 +562,3 @@ function countSheeps(arrayOfSheep) {
   }
   return result;
 }
-//
