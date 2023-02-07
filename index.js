@@ -562,3 +562,9 @@ function countSheeps(arrayOfSheep) {
   }
   return result;
 }
+//Задача 73 Создать функцию
+function helloWorld () {
+  let str = "Hello World!";
+  console.log (str)
+}
+//
