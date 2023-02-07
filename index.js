@@ -571,5 +571,11 @@ function helloWorld() {
 function shortcut(string) {
   return string.replace(/[aeiou]/g, "");
 }
+//Задача 75 Найти макс и мин чисто в массиве
+var min = function (list) {
+  return Math.min(...list);
+};
+var max = function (list) {
+  return Math.max(...list);
+};
 //
-
