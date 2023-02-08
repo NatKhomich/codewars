@@ -578,5 +578,11 @@ var min = function (list) {
 var max = function (list) {
   return Math.max(...list);
 };
+//Задача 76 В строке с числами вернуть макс и мин число
+function highAndLow(numbers) {
+  let arr = numbers.split(" ");
+  let max = Math.max(...arr);
+  let min = Math.min(...arr);
+  return max + " " + min;
+}
 //
-
