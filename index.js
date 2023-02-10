@@ -585,4 +585,12 @@ function highAndLow(numbers) {
   let min = Math.min(...arr);
   return max + " " + min;
 }
+//Задача 77 Вернуть error если строка, если число *50+6
+function problem(x){
+  if (typeof(x)==='string'){
+    return 'Error';
+  } else {
+    return x*50+6;
+  }
+}
 //
