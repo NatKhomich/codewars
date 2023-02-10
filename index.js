@@ -586,11 +586,15 @@ function highAndLow(numbers) {
   return max + " " + min;
 }
 //Задача 77 Вернуть error если строка, если число *50+6
-function problem(x){
-  if (typeof(x)==='string'){
-    return 'Error';
+function problem(x) {
+  if (typeof x === "string") {
+    return "Error";
   } else {
-    return x*50+6;
+    return x * 50 + 6;
   }
+}
+//Задача 78 Возвести число в квадрат
+function square(num) {
+  return Math.pow(num, 2);
 }
 //
