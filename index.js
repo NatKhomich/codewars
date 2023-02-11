@@ -615,3 +615,14 @@ function findAverage(array) {
     return 0;
   }
 }
+//Задача 81 Сравнить первый и последний символ beast и dish
+function feast(beast, dish) {
+  if (
+    beast[0] === dish[0] &&
+    beast[beast.length - 1] === dish[dish.length - 1]
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
