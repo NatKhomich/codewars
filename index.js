@@ -603,4 +603,15 @@ function powersOfTwo(n) {
   for (let i = 0; i <= n; i++) arr[i] = 2 ** i;
   return arr;
 }
-//
+//Задача 80 Найти среднее арифм эл массива. если массив пустой вернуть 0
+function findAverage(array) {
+  let averageValue = 0;
+  for (let i = 0; i < array.length; i++) {
+    averageValue += array[i];
+  }
+  if (array != 0) {
+    return averageValue / array.length;
+  } else {
+    return 0;
+  }
+}
