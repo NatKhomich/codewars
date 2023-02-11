@@ -597,4 +597,10 @@ function problem(x) {
 function square(num) {
   return Math.pow(num, 2);
 }
+//Задача 79 Вернуть квадрат всех чисел до n
+function powersOfTwo(n) {
+  let arr = [];
+  for (let i = 0; i <= n; i++) arr[i] = 2 ** i;
+  return arr;
+}
 //
