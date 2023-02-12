@@ -635,3 +635,12 @@ function smallEnough(a, limit) {
   }
   return true;
 }
+//Задача 83 Вернуть массив значений от integer до limit кратных integer
+function findMultiples(integer, limit) {
+  let result = [];
+  for (let i = integer; i <= limit; i += integer) {
+    result.push(i);
+  }
+  return result;
+}
+//
