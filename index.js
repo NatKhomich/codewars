@@ -3,22 +3,24 @@ function mango(quantity, price) {
   const gift = quantity - Math.floor(quantity / 3);
   return gift * price;
 }
+console.log(mango(3,20));
 //Задача 2 Перебрать эл строки в обр порядке "red">"der"
-function solution(str) {
+function mySolution(str) {
   let newString = "";
-  for (var i = str.length - 1; i >= 0; i--) {
+  for (let i = str.length - 1; i >= 0; i--) {
     newString += str[i];
   }
   return newString;
 }
-solution("hello");
+mySolution("hello");
 //Задача 3 Вернуть сумму чисел массива
 function sum(numbers) {
   "use strict";
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
-  return sum;
+  let result = 0;
+  for (let i = 0; i < numbers.length; i++) result += numbers[i];
+  return result;
 }
+sum(1)
 //Задача 4 Вернуть время с полуночи в миллисекундах
 function past(h, m, s) {
   const convertHours = h * 60 * 60 * 1000;
@@ -26,10 +28,12 @@ function past(h, m, s) {
   const convertSeconds = s * 1000;
   return convertHours + convertMinutes + convertSeconds;
 }
+past();
 //Задача 5 Найти противоположность числу
 function opposite(number) {
   return -number;
 }
+opposite();
 //Задача 6 Если имя на r R вернуть имя+играет на бонжо
 function areYouPlayingBanjo(name) {
   if (name[0] === "r" || name[0] === "R") {
@@ -37,12 +41,13 @@ function areYouPlayingBanjo(name) {
   } else {
     return `${name} does not play banjo`;
   }
-  return name;
 }
+areYouPlayingBanjo();
 //Задача 7 Вернуть предложение из массова слов
 function smash(words) {
   return words.join(" ");
 }
+smash();
 //Задача 8 Вернуть какой игрок выиграет
 const rps = (p1, p2) => {
   if (p1 === p2) {
