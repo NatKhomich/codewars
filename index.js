@@ -63,23 +63,26 @@ const rps = (p1, p2) => {
     return `Player 2 won!`;
   }
 };
+rps();
 //Задача 9 Преобразовать true в "true"
 function booleanToString(b) {
   return b + "";
 }
+booleanToString();
 //Задача 10 Сложить слова в строку
 function myWorld(a = "hello", b = " world") {
   return a + b;
 }
 myWorld();
 //Задача 11 Персонализированное приветствие
-function greet(name, owner) {
+function greett(name, owner) {
   if (name === owner) {
     return "Hello boss";
   } else {
     return "Hello guest";
   }
 }
+greett();
 //Задача 12 Вернуть yes если true и no если false
 function boolToWord(bool) {
   if (bool === true) {
@@ -88,19 +91,21 @@ function boolToWord(bool) {
     return "No";
   }
 }
+boolToWord();
 //Задача 13 Преобразовать строку в число
 const stringToNumber = function (str) {
-  const transform = Number.parseInt(str);
-  return transform;
+  return Number.parseInt(str);
 };
+stringToNumber();
 //Задача 14 Вернуть четное число
 function evenOrOdd(number) {
-  if (number % 2 == 0) {
+  if (number % 2 === 0) {
     return "Even";
   } else {
     return "Odd";
   }
 }
+evenOrOdd();
 //Задача 15 Вернуть противоположные числа в массиве
 function invert(array) {
   for (let i = 0; i < array.length; i++) {
@@ -108,11 +113,12 @@ function invert(array) {
   }
   return array;
 }
+invert();
 //Задача 16 За 1км выпивает 0.5 литра. Узнать сколько выпьет и окр до целого числа
 function litres(time) {
-  let water = Math.floor(time / 2);
-  return water;
+  return Math.floor(time / 2);
 }
+litres();
 //Задача 17 Если число положительное вернуть отрицательное
 function makeNegative(num) {
   if (num > 0) {
@@ -121,30 +127,35 @@ function makeNegative(num) {
     return num;
   }
 }
+makeNegative();
 //Задача 18 Найти сумму всех чисел до вводимого (3= 1+2+3)
-var summation = function (num) {
+let summation = function (num) {
   let sum = 0;
   for (i = num; i >= 1; i--) {
     sum += i;
   }
   return sum;
 };
+summation();
 //Задача 19 Число * на 2
 function doubleInteger(i) {
   return i * 2;
 }
+doubleInteger();
 //Задача 20 Удалить пробелы мд символами в строке
 function noSpace(x) {
   return x.replace(/\s/g, "");
 }
+noSpace();
 //Задача 21 Четное число * на 8, нечетное на 9
 function simpleMultiplication(number) {
-  if (number % 2 == 0) {
+  if (number % 2 === 0) {
     return number * 8;
   } else {
     return number * 9;
   }
 }
+simpleMultiplication();
 //Задача 22
 function points(games) {
   let i = 0;
@@ -153,7 +164,7 @@ function points(games) {
     let each = games[i].split(":");
     if (each[0] > each[1]) {
       points += 3;
-    } else if (each[0] == each[1]) {
+    } else if (each[0] === each[1]) {
       points += 1;
     } else {
       points += 0;
@@ -161,6 +172,7 @@ function points(games) {
   }
   return points;
 }
+points();
 //Задача 23
 function rentalCarCost(d) {
   let price = 40;
@@ -193,16 +205,17 @@ function grow(x) {
 }
 //Задача 27 Вернуть к какому кварталу принадлежит месяц
 const quarterOf = (month) => {
-  if (month == 1 || month == 2 || month == 3) {
+  if (month === 1 || month === 2 || month === 3) {
     return 1;
-  } else if (month == 4 || month == 5 || month == 6) {
+  } else if (month === 4 || month === 5 || month === 6) {
     return 2;
-  } else if (month == 7 || month == 8 || month == 9) {
+  } else if (month === 7 || month === 8 || month === 9) {
     return 3;
   } else {
     return 4;
   }
 };
+quarterOf();
 //Задача 28 Если квадрат вернуть площадь, если прямоуг - периметр
 const areaOrPerimeter = function (l, w) {
   if (l === w) {
