@@ -249,23 +249,23 @@ function removeExclamationMarks(s) {
 }
 //Задача 34 Вернуть нужную строку (лепестки)
 function howMuchILoveYou(nbPetals) {
-  if (nbPetals % 6 == 1) {
+  if (nbPetals % 6 === 1) {
     return "I love you";
-  } else if (nbPetals % 6 == 2) {
+  } else if (nbPetals % 6 === 2) {
     return "a little";
-  } else if (nbPetals % 6 == 3) {
+  } else if (nbPetals % 6 === 3) {
     return "a lot";
-  } else if (nbPetals % 6 == 4) {
+  } else if (nbPetals % 6 === 4) {
     return "passionately";
-  } else if (nbPetals % 6 == 5) {
+  } else if (nbPetals % 6 === 5) {
     return "madly";
-  } else if (nbPetals % 6 == 0) {
+  } else if (nbPetals % 6 === 0) {
     return "not at all";
   }
 }
 //Задача 35 Вернуть четные числа
 function testEven(n) {
-  return n % 2 == 0 ? true : false;
+  return n % 2 === 0;
 }
 //Задача 36 Сложить количество голлов в чемпионате
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
@@ -572,10 +572,10 @@ function shortcut(string) {
   return string.replace(/[aeiou]/g, "");
 }
 //Задача 75 Найти макс и мин чисто в массиве
-var min = function (list) {
+let min = function (list) {
   return Math.min(...list);
 };
-var max = function (list) {
+let max = function (list) {
   return Math.max(...list);
 };
 //Задача 76 В строке с числами вернуть макс и мин число
@@ -643,4 +643,5 @@ function findMultiples(integer, limit) {
   }
   return result;
 }
+console.log(findMultiples(15,80))
 //
