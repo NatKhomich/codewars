@@ -184,6 +184,7 @@ function rentalCarCost(d) {
     return d * price;
   }
 }
+rentalCarCost();
 //Задача 24 Преобразовать строку в число и сложить
 function sumMix(x) {
   let sum = 0;
@@ -195,14 +196,17 @@ function sumMix(x) {
   }
   return sum;
 }
+sumMix();
 //Задача 25 Разбить строку на массив слов
 function stringToArray(string) {
   return string.split(" ");
 }
+stringToArray();
 //Задача 26 Перемножить массив
 function grow(x) {
   return x.reduce((a, b) => a * b);
 }
+grow();
 //Задача 27 Вернуть к какому кварталу принадлежит месяц
 const quarterOf = (month) => {
   if (month === 1 || month === 2 || month === 3) {
@@ -224,10 +228,12 @@ const areaOrPerimeter = function (l, w) {
     return 2 * (l + w);
   }
 };
+areaOrPerimeter();
 //или
 const areaOrPerimeter2 = function (l, w) {
   return l === w ? l * w : 2 * (l + w);
 };
+areaOrPerimeter2();
 //Задача 29 Сложить положит числа в массиве
 function positiveSum(arr) {
   let sum = 0;
@@ -559,9 +565,10 @@ function findNeedle(haystack) {
   }
 }
 //Задача 70 Перемножить числа в массиве
-function grow(x) {
+function multiply(x) {
   return x.reduce((a, b) => a * b);
 }
+multiply();
 //Задача 71 Отсортировать массив по возрастанию, если null вернуть []
 function solution(nums) {
   if (nums !== null) {
