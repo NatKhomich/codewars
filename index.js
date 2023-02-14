@@ -75,14 +75,14 @@ function myWorld(a = "hello", b = " world") {
 }
 myWorld();
 //Задача 11 Персонализированное приветствие
-function greett(name, owner) {
+function greet(name, owner) {
   if (name === owner) {
     return "Hello boss";
   } else {
     return "Hello guest";
   }
 }
-greett();
+greet();
 //Задача 12 Вернуть yes если true и no если false
 function boolToWord(bool) {
   if (bool === true) {
@@ -131,7 +131,7 @@ makeNegative();
 //Задача 18 Найти сумму всех чисел до вводимого (3= 1+2+3)
 let summation = function (num) {
   let sum = 0;
-  for (i = num; i >= 1; i--) {
+  for (let i = num; i >= 1; i--) {
     sum += i;
   }
   return sum;
@@ -297,8 +297,8 @@ function testEven(n) {
 }
 testEven();
 //Задача 36 Сложить количество голлов в чемпионате
-function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+function goals(ligandGoals, copyDelReyGoals, championsLeagueGoals) {
+  return ligandGoals + copyDelReyGoals + championsLeagueGoals;
 }
 goals();
 //Задача 37 Удалить первый и последний символ строки
@@ -413,7 +413,7 @@ function otherAngle(a, b) {
 otherAngle();
 //Задача 46 Найти множитель числа
 function checkForFactor(base, factor) {
-  return base % factor == 0;
+  return base % factor === 0;
 }
 checkForFactor();
 //Задача 47
@@ -424,43 +424,47 @@ function paperwork(n, m) {
     return n * m;
   }
 }
+paperwork();
 //Задача 48 Если работаю true, если отпуск false
 function setAlarm(employed, vacation) {
-  if (employed && !vacation) {
-    return true;
-  } else {
-    return false;
-  }
+  return employed && !vacation;
 }
+setAlarm();
 //Задача 49 Вернуть строку
-function greet(name) {
+function myGreet(name) {
   return `Hello, ${name} how are you doing today?`;
 }
+myGreet();
 //Задача 50 Каждый эл массива * на 2
 function maps(x) {
-  let result = x.map((el) => el * 2);
-  return result;
+  return x.map((el) => el * 2);
 }
+maps();
 //Задача 51 Число в строку
 function numberToString(num) {
   return num + "";
 }
+numberToString();
 //или
-function numberToString(num) {
+function numberToString1(num) {
   return String(num);
 }
+numberToString1();
 //Задача 52 Вернуть столетие по году
 function century(year) {
   return Math.ceil(year / 100);
 }
+century();
 //Задача 53 Найти разницу объемов параллелепипеда
 function findDifference(a, b) {
   return Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
 }
+findDifference();
 //Задача 54 Перевести км/ч в м/с и округлить до меньшего целого
 function cockroachSpeed(s) {
   return Math.floor(s / 0.036);
 }
+cockroachSpeed();
 //Задача 55 Ф-я возвращает s повторяющееся n раз
 function repeatStr(n, s) {
   let result = "";
@@ -469,10 +473,12 @@ function repeatStr(n, s) {
   }
   return result;
 }
+repeatStr();
 //или
-function repeatStr(n, s) {
+function repeatStr1(n, s) {
   return s.repeat(n);
 }
+repeatStr1();
 //Задача 56 Отсортировать массив и вернуть единственое число отличное от всех элементов массива
 function stray(numbers) {
   let arr = numbers.sort();
@@ -482,22 +488,23 @@ function stray(numbers) {
     return arr[arr.length - 1];
   }
 }
+stray();
 //Задача 57 Вернуть true если одно число положительное, другое отрицательное
-function lovefunc(flower1, flower2) {
-  return (flower1 % 2 == 0 && flower2 % 2 == 1) ||
-    (flower2 % 2 == 0 && flower1 % 2 == 1)
-    ? true
-    : false;
+function plusMinus(flower1, flower2) {
+  return (flower1 % 2 === 0 && flower2 % 2 === 1) ||
+      (flower2 % 2 === 0 && flower1 % 2 === 1);
 }
+plusMinus();
 //Задача 58 Проверить содержит ли массив а знаение х
 function check(a, x) {
-  return a.includes(x) ? true : false;
+  return a.includes(x);
 }
+check();
 //Задача 59 Ф-я возвращ строку привет мир
-function greet(world) {
-  return "hello world!";
+function greet2(world) {
 }
-//Задача 60 Каждый символ повт 2 раза abc = aabbcc
+greet2('hello world');
+//Задача 60 Каждый символ повт 2 раза
 function doubleChar(str) {
   let newStr = "";
   for (let i = 0; i < str.length; i++) {
@@ -505,6 +512,7 @@ function doubleChar(str) {
   }
   return newStr;
 }
+doubleChar();
 //Задача 61 Удалить каждый второй элемент массива
 function removeEveryOther(arr) {
   for (let i = 1; i < arr.length; i++) {
@@ -512,14 +520,17 @@ function removeEveryOther(arr) {
   }
   return arr;
 }
+removeEveryOther();
 //Задача 62 Отсортировать массив по длине строки
 function sortByLength(array) {
   return array.sort((a, b) => a.length - b.length);
 }
+sortByLength();
 //Задача 63 Определить существует ли треугольник
 function isTriangle(a, b, c) {
-  return a + b > c && b + c > a && c + a > b ? true : false;
+  return a + b > c && b + c > a && c + a > b;
 }
+isTriangle();
 //Задача 64 Вернуть true если yourPoints больше среднего арифметического массива classPoints
 function betterThanAverage(classPoints, yourPoints) {
   let sum = 0;
@@ -527,22 +538,20 @@ function betterThanAverage(classPoints, yourPoints) {
     sum += classPoints[i];
   }
   let average = sum / classPoints.length;
-  if (yourPoints > average) {
-    return true;
-  } else {
-    return false;
-  }
+  return yourPoints > average;
 }
+betterThanAverage();
 //Задача 65 Найти количество совпадений letter в строке str
 function strCount(str, letter) {
   let result = 0;
   for (let i = 0; i < str.length; i++) {
-    if (str.charAt(i) == letter) {
+    if (str.charAt(i) === letter) {
       result += 1;
     }
   }
   return result;
 }
+strCount();
 //Задача 66 Найти наибольший результат используя *+()
 function expressionMatter(a, b, c) {
   return Math.max(
@@ -554,14 +563,15 @@ function expressionMatter(a, b, c) {
     a * (b + c)
   );
 }
+expressionMatter();
 //Задача 67 Яв-ся ли n квадратом
-var isSquare = function (n) {
+const isSquare = function (n) {
   let result = Math.sqrt(n);
-  return result % 1 == 0;
+  return result % 1 === 0;
 };
+isSquare();
 //Задача 68 Найти наименьшее число в массиве
-class SmallestIntegerFinder {
-  findSmallestInt(args) {
+  function findSmallestInt(args) {
     let result = args[0];
     for (let i = 0; i < args.length; i++) {
       if (args[i] < result) {
@@ -569,8 +579,8 @@ class SmallestIntegerFinder {
       }
     }
     return result;
-  }
 }
+findSmallestInt();
 //Задача 69 Найти needle в массиве
 function findNeedle(haystack) {
   for (let i = 0; i < haystack.length; i++) {
@@ -579,6 +589,7 @@ function findNeedle(haystack) {
     }
   }
 }
+findNeedle();
 //Задача 70 Перемножить числа в массиве
 function multiply(x) {
   return x.reduce((a, b) => a * b);
@@ -593,7 +604,7 @@ function solution(nums) {
   }
 }
 //Задача 72 Посчитать количество true в массиве
-function countSheeps(arrayOfSheep) {
+function countSheep1(arrayOfSheep) {
   let result = 0;
   for (let i = 0; i < arrayOfSheep.length; i++) {
     if (arrayOfSheep[i] === true) {
@@ -602,15 +613,12 @@ function countSheeps(arrayOfSheep) {
   }
   return result;
 }
-//Задача 73 Создать функцию
-function helloWorld() {
-  let str = "Hello World!";
-  console.log(str);
-}
+countSheep1();
 //Задача 74 Удалить гласные из строки
 function shortcut(string) {
   return string.replace(/[aeiou]/g, "");
 }
+shortcut();
 //Задача 75 Найти макс и мин чисто в массиве
 let min = function (list) {
   return Math.min(...list);
@@ -625,6 +633,7 @@ function highAndLow(numbers) {
   let min = Math.min(...arr);
   return max + " " + min;
 }
+highAndLow();
 //Задача 77 Вернуть error если строка, если число *50+6
 function problem(x) {
   if (typeof x === "string") {
@@ -633,39 +642,38 @@ function problem(x) {
     return x * 50 + 6;
   }
 }
+problem();
 //Задача 78 Возвести число в квадрат
 function square(num) {
   return Math.pow(num, 2);
 }
+square();
 //Задача 79 Вернуть квадрат всех чисел до n
 function powersOfTwo(n) {
   let arr = [];
   for (let i = 0; i <= n; i++) arr[i] = 2 ** i;
   return arr;
 }
+powersOfTwo();
 //Задача 80 Найти среднее арифм эл массива. если массив пустой вернуть 0
 function findAverage(array) {
   let averageValue = 0;
   for (let i = 0; i < array.length; i++) {
     averageValue += array[i];
   }
-  if (array != 0) {
+  if (array !== 0) {
     return averageValue / array.length;
   } else {
     return 0;
   }
 }
+findAverage();
 //Задача 81 Сравнить первый и последний символ beast и dish
 function feast(beast, dish) {
-  if (
-    beast[0] === dish[0] &&
-    beast[beast.length - 1] === dish[dish.length - 1]
-  ) {
-    return true;
-  } else {
-    return false;
-  }
+  return beast[0] === dish[0] &&
+      beast[beast.length - 1] === dish[dish.length - 1];
 }
+feast();
 //Задача 82 Вернуть true если кажд число массива меньше limit
 function smallEnough(a, limit) {
   for (let i = 0; i < a.length; i++) {
@@ -675,6 +683,7 @@ function smallEnough(a, limit) {
   }
   return true;
 }
+smallEnough();
 //Задача 83 Вернуть массив значений от integer до limit кратных integer
 function findMultiples(integer, limit) {
   let result = [];
