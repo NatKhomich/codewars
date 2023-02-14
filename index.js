@@ -244,12 +244,12 @@ function positiveSum(arr) {
   }
   return sum;
 }
+positiveSum();
 //Задача 30 Объем прямоугольного параллелепипеда
-class Kata {
-  static getVolumeOfCuboid(length, width, height) {
+  function getVolumeOfCuboid(length, width, height) {
     return length * width * height;
   }
-}
+getVolumeOfCuboid();
 //Задача 31 Вернуть нужную строку при выполненном условии
 function hoopCount(n) {
   if (n >= 10) {
@@ -258,6 +258,7 @@ function hoopCount(n) {
     return "Keep at it until you get it";
   }
 }
+hoopCount();
 // Задача 32 За сколько лет увелич население при вводных
 function nbYear(p0, percent, aug, p) {
   let totalYear = 0;
@@ -267,10 +268,12 @@ function nbYear(p0, percent, aug, p) {
   }
   return totalYear;
 }
+nbYear();
 //Задача 33 Убрать ! из строки
 function removeExclamationMarks(s) {
   return s.replace(/!/g, "");
 }
+removeExclamationMarks();
 //Задача 34 Вернуть нужную строку (лепестки)
 function howMuchILoveYou(nbPetals) {
   if (nbPetals % 6 === 1) {
@@ -287,18 +290,22 @@ function howMuchILoveYou(nbPetals) {
     return "not at all";
   }
 }
+howMuchILoveYou();
 //Задача 35 Вернуть четные числа
 function testEven(n) {
   return n % 2 === 0;
 }
+testEven();
 //Задача 36 Сложить количество голлов в чемпионате
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+goals();
 //Задача 37 Удалить первый и последний символ строки
 function removeChar(str) {
   return str.slice(1, -1);
 }
+removeChar();
 //Задача 38 Найти индекс массы тела и вернуть результат
 function bmi(weight, height) {
   let indexMassBody = weight / Math.pow(height, 2);
@@ -312,6 +319,7 @@ function bmi(weight, height) {
     return "Obese";
   }
 }
+bmi();
 //Задача 39 Рассчитать кол мест в автобусе при вводных
 function enough(cap, on, wait) {
   let place = cap - on;
@@ -321,10 +329,10 @@ function enough(cap, on, wait) {
     return wait + on - cap;
   }
 }
+enough();
 //Задача 40 Вернуть возраст человека, кошки и собаки
-var humanYearsCatYearsDogYears = function (humanYears) {
-  let catYears = 0;
-  let dogYears = 0;
+let humanYearsCatYearsDogYears = function (humanYears) {
+  let catYears, dogYears;
   if (humanYears === 1) {
     catYears = 15;
     dogYears = 15;
@@ -337,17 +345,19 @@ var humanYearsCatYearsDogYears = function (humanYears) {
   }
   return [humanYears, catYears, dogYears];
 };
+humanYearsCatYearsDogYears();
 //Задача 41 Считать овец
-var countSheep = function (num) {
+let countSheep = function (num) {
   let str = "";
   for (let i = 1; i <= num; i++) {
     str += `${i} sheep...`;
   }
   return str;
 };
+countSheep();
 //Задача 42 Вернуть сумму чисел между ними (числа + или -)
 function getSum(a, b) {
-  if (a == b) {
+  if (a === b) {
     return a;
   } else if (a < b) {
     max = b;
@@ -362,6 +372,7 @@ function getSum(a, b) {
   }
   return sum;
 }
+getSum();
 //Задача 43 Вернуть число словами
 function switchItUp(number) {
   switch (number) {
@@ -389,18 +400,22 @@ function switchItUp(number) {
       return "Enter a number between 0 and 9";
   }
 }
+switchItUp();
 //Задача 44 На 1 дракона 2 пули. Вернуть true или false
 function hero(bullets, dragons) {
-  return bullets >= dragons * 2 ? true : false;
+  return bullets >= dragons * 2;
 }
+hero();
 //Задача 45 Найти третий угол треугольника
 function otherAngle(a, b) {
   return 180 - (a + b);
 }
+otherAngle();
 //Задача 46 Найти множитель числа
 function checkForFactor(base, factor) {
-  return base % factor == 0 ? true : false;
+  return base % factor == 0;
 }
+checkForFactor();
 //Задача 47
 function paperwork(n, m) {
   if (n < 0 || m < 0) {
