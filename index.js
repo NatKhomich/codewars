@@ -693,5 +693,9 @@ function findMultiples(integer, limit) {
   return result;
 }
 console.log(findMultiples(15,80))
+//Задача 84 Узнать нужно ли множественное число
+function plural(n) {
+  return n !== 1;
+}
+plural();
 //
-//test
