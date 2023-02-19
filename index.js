@@ -703,4 +703,17 @@ function plural1(n) {
   return n === 1? false : true;
 }
 plural1();
+//Задача 85 Заменить Т на U
+function DNAtoRNA(dna) {
+  let str = '';
+  for (let i = 0; i < dna.length; i++) {
+    if (dna [i] === 'T') {
+      str += 'U';
+    } else {
+      str += dna [i];
+    }
+  }
+  return str;
+}
+DNAtoRNA();
 //
