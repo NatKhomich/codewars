@@ -716,4 +716,13 @@ function DNAtoRNA(dna) {
   return str;
 }
 DNAtoRNA();
-//
+//или
+function DNAtoRNA1(dna){
+  return dna.replace(/T/g, 'U');
+}
+DNAtoRNA1();
+//или (разобрать)
+function DNAtoRNA2(dna) {
+  return dna.split("T").join("U");
+}
+DNAtoRNA2();
