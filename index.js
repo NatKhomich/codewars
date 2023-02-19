@@ -698,4 +698,9 @@ function plural(n) {
   return n !== 1;
 }
 plural();
+//или
+function plural1(n) {
+  return n === 1? false : true;
+}
+plural1();
 //
