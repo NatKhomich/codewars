@@ -921,4 +921,22 @@ function descendingOrder(n) {
 
 descendingOrder();
 
+//Задача 88 Вернуть массив положительных и отрицаткльных чисел
+function countPositivesSumNegatives(input) {
+    if (input === null || input.length < 1) {
+        return [];
+    }
+    let result = [0, 0];
+    for (let i = 0; i < input.length; i++) {
+        if (input[i] > 0) {
+            result[0] += 1;
+        } else {
+            result[1] += input[i];
+        }
+    }
+    return result;
+}
+
+countPositivesSumNegatives();
+
 //
