@@ -939,4 +939,11 @@ function countPositivesSumNegatives(input) {
 
 countPositivesSumNegatives();
 
+//Задача 89 Вернуть строку в обратном порядке 'I am an expert at this'/'this at expert an am I'
+function reverse(string) {
+    return string.split(' ').reverse().join(' ');
+}
+
+reverse();
+
 //
