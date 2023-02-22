@@ -946,4 +946,10 @@ function reverse(string) {
 
 reverse();
 
+//Задача 90 Вернуть 5 без использования чисел и +-*/
+function unusualFive() {
+    return 'aaaaa'.length;
+}
+unusualFive();
+
 //
