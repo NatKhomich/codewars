@@ -859,13 +859,6 @@ function plural(n) {
 
 plural();
 
-//или
-function plural1(n) {
-    return n === 1 ? false : true;
-}
-
-plural1();
-
 //Задача 85 Заменить Т на U
 function DNAtoRNA(dna) {
     let str = '';
@@ -950,6 +943,14 @@ reverse();
 function unusualFive() {
     return 'aaaaa'.length;
 }
+
 unusualFive();
+
+//Задача 91 Выяснить хватит ли бензина
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return distanceToPump / mpg <= fuelLeft
+};
+
+zeroFuel();
 
 //
