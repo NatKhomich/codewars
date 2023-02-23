@@ -953,4 +953,11 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 
 zeroFuel();
 
+//Задача 92 Убрать все гласные из строки, кроме y
+function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '')
+}
+
+disemvowel();
+
 //
