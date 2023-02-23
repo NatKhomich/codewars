@@ -971,4 +971,11 @@ function mouthSize(animal) {
 
 mouthSize();
 
+//Задача 94 Заменить 5, 0, 1 на S, O, I
+function correct(string) {
+    return string.replace(/5/gi, 'S').replace(/0/gi, 'O').replace(/1/gi, 'I')
+}
+
+correct();
+
 //
