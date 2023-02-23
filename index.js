@@ -960,4 +960,15 @@ function disemvowel(str) {
 
 disemvowel();
 
+//Задача 93 Вернуть строку в зависимости от условия
+function mouthSize(animal) {
+    if (animal === 'alligator' || animal === 'ALLIGATOR') {
+        return 'small';
+    } else {
+        return 'wide'
+    }
+}
+
+mouthSize();
+
 //
