@@ -1000,3 +1000,12 @@ function reverseList(list) {
 
 reverseList();
 
+//Задача 97 Найти длину самого короткого слова в строке
+function findShort(s) {
+    let res = s.split(' ').sort(function (a, b) {
+        return a.length - b.length
+    });
+    return res[0].length;
+}
+
+findShort();
