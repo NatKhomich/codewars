@@ -992,3 +992,11 @@ function finalGrade(exam, projects) {
 }
 
 finalGrade();
+
+//Задача 96 Остортировать массив в обратном порядке
+function reverseList(list) {
+    return list.reverse();
+}
+
+reverseList();
+
