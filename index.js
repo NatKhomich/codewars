@@ -1009,3 +1009,16 @@ function findShort(s) {
 }
 
 findShort();
+
+//Задача 98 Вернуть нужное значение при вводных
+function getGrade(s1, s2, s3) {
+    let score = (s1 + s2 + s3) / 3;
+    if (90 <= score) return 'A';
+    else if (80 <= score) return 'B';
+    else if (70 <= score) return 'C';
+    else if (60 <= score) return 'D';
+    else if (0 <= score) return 'F';
+}
+
+getGrade();
+
