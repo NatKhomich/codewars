@@ -1022,3 +1022,11 @@ function getGrade(s1, s2, s3) {
 
 getGrade();
 
+//Задача 99
+function move(position, roll) {
+    return position + roll * 2;
+}
+
+move();
+
+//
