@@ -1041,4 +1041,10 @@ function sumDigits(number) {
 
 sumDigits();
 
-//
+//Задача 101 Из фамилии и имени сделать аббревеатуру разделенную точкой. Natalia Khomich => N.K
+function abbrevName(name) {
+    return name.toUpperCase().split(' ').map(element => element[0]).join('.');
+}
+
+abbrevName();
+
