@@ -1039,4 +1039,6 @@ function sumDigits(number) {
     return sum;
 }
 
+sumDigits();
+
 //
