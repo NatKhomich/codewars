@@ -1048,3 +1048,17 @@ function abbrevName(name) {
 
 abbrevName();
 
+//Задача 102 Перевести строку в цифры 0 и 1
+function fakeBin(x) {
+    let res = '';
+    for (let i = 0; i < x.length; i++) {
+        if (x[i] < 5) {
+            res += 0;
+        } else res += 1;
+    }
+    return res;
+}
+
+fakeBin();
+
+//
