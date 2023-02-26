@@ -1061,4 +1061,15 @@ function fakeBin(x) {
 
 fakeBin();
 
-//
+//Задача 103 Если сумма эл массива четная вернуть 'even', если нечетная 'odd'
+function oddOrEven(array) {
+    let res = 0;
+    for (let i = 0; i < array.length; i++) {
+        res += array[i];
+    }
+    if (res % 2 === 0) return 'even';
+    else return 'odd';
+}
+
+oddOrEven();
+
