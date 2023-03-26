@@ -1073,5 +1073,12 @@ function oddOrEven(array) {
 
 oddOrEven();
 
+//Задача 104 Найти сумму переменных
+let laLigaGoals = 43
+let championsLeagueGoals = 10
+let copaDelReyGoals = 5
+
+let totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
+
 //
 
