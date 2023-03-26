@@ -1080,5 +1080,10 @@ let copaDelReyGoals = 5
 
 let totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
 
-//
+//Задача 105 Приветственная функция
+function sayHello(name) {
+    return `Hello, ${name}`
+}
+sayHello()
 
+//
