@@ -1096,10 +1096,20 @@ function bmi(weight, height) {
         return "Normal"
     } else if (bmi <=30) {
         return "Overweight"
-    } else{
-        "Obese"
+    } else {
+        return "Obese"
     }
 }
 bmi()
 
-//
+//Задача 107
+function updateLight(current) {
+    if (current === 'green') {
+        return 'yellow'
+    } else if (current === 'yellow') {
+        return 'red'
+    } else{
+        return 'green'
+    }
+}
+updateLight()
