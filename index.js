@@ -1084,22 +1084,24 @@ let totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
 function sayHello(name) {
     return `Hello, ${name}`
 }
+
 sayHello()
 
 //Задача 106 Вернуть строку по условию
 function bmi(weight, height) {
     const bmi = weight / (height * height)
 
-    if(bmi <= 18.5) {
-        return  "Underweight"
-    } else if (bmi <=25) {
+    if (bmi <= 18.5) {
+        return "Underweight"
+    } else if (bmi <= 25) {
         return "Normal"
-    } else if (bmi <=30) {
+    } else if (bmi <= 30) {
         return "Overweight"
     } else {
         return "Obese"
     }
 }
+
 bmi()
 
 //Задача 107
@@ -1108,8 +1110,22 @@ function updateLight(current) {
         return 'yellow'
     } else if (current === 'yellow') {
         return 'red'
-    } else{
+    } else {
         return 'green'
     }
 }
+
 updateLight()
+
+//Задача 108
+function saleHotdogs(n) {
+    if (n < 5) {
+        return n * 100
+    } else if (n >= 5 && n < 10) {
+        return n * 95
+    } else {
+        return n * 90
+    }
+}
+
+saleHotdogs()
