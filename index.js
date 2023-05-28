@@ -1129,3 +1129,10 @@ function saleHotdogs(n) {
 }
 
 saleHotdogs()
+
+//Задача 109 Преобраз число в перевернутый массив цифр 1234 => [4,3,2,1]
+function digitize(n) {
+    return n.toString().split("").reverse().map(Number)
+}
+
+digitize()
