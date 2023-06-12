@@ -1136,3 +1136,9 @@ function digitize(n) {
 }
 
 digitize()
+
+//Задача 110 Сделать в строке строчные буквы заглавными и наоборот
+String.prototype.toAlternatingCase = function () {
+    // Define your method here :)
+    return this.split('').map(el => el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase()).join('')
+}
