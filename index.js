@@ -19,9 +19,10 @@ mySolution();
 
 //Задача 3 Вернуть сумму чисел массива
 function sum(numbers) {
-    "use strict";
     let result = 0;
-    for (let i = 0; i < numbers.length; i++) result += numbers[i];
+    for (let i = 0; i < numbers.length; i++) {
+        result += numbers[i];
+    }
     return result;
 }
 
@@ -55,7 +56,7 @@ function areYouPlayingBanjo(name) {
 
 areYouPlayingBanjo();
 
-//Задача 7 Вернуть предложение из массова слов
+//Задача 7 Вернуть предложение из массива слов
 function smash(words) {
     return words.join(" ");
 }
@@ -106,11 +107,7 @@ greet();
 
 //Задача 12 Вернуть yes если true и no если false
 function boolToWord(bool) {
-    if (bool === true) {
-        return "Yes";
-    } else {
-        return "No";
-    }
+    return bool ? 'yes' : 'no'
 }
 
 boolToWord();
@@ -123,11 +120,7 @@ stringToNumber();
 
 //Задача 14 Вернуть четное число
 function evenOrOdd(number) {
-    if (number % 2 === 0) {
-        return "Even";
-    } else {
-        return "Odd";
-    }
+    return number % 2 === 0 ? 'Even' : 'Odd'
 }
 
 evenOrOdd();
@@ -142,6 +135,10 @@ function invert(array) {
 
 invert();
 
+const inv = array => array.map(el => el *= -1)
+
+inv()
+
 //Задача 16 За 1км выпивает 0.5 литра. Узнать сколько выпьет и окр до целого числа
 function litres(time) {
     return Math.floor(time / 2);
@@ -151,11 +148,7 @@ litres();
 
 //Задача 17 Если число положительное вернуть отрицательное
 function makeNegative(num) {
-    if (num > 0) {
-        return -num;
-    } else {
-        return num;
-    }
+  return num > 0 ? -num : num
 }
 
 makeNegative();
@@ -186,20 +179,15 @@ noSpace();
 
 //Задача 21 Четное число * на 8, нечетное на 9
 function simpleMultiplication(number) {
-    if (number % 2 === 0) {
-        return number * 8;
-    } else {
-        return number * 9;
-    }
+    return  number % 2 === 0 ? number * 8 : number * 9
 }
 
 simpleMultiplication();
 
 //Задача 22
 function points(games) {
-    let i = 0;
     let points = 0;
-    for (i; i < games.length; i++) {
+    for ( let i = 0; i < games.length; i++) {
         let each = games[i].split(":");
         if (each[0] > each[1]) {
             points += 3;
@@ -1142,3 +1130,14 @@ String.prototype.toAlternatingCase = function () {
     // Define your method here :)
     return this.split('').map(el => el === el.toUpperCase() ? el.toLowerCase() : el.toUpperCase()).join('')
 }
+
+//рекурсия
+function pow (x, n) {
+    if (n === 1) {
+        return x
+    } else {
+        return x * pow(x, n - 1)
+    }
+}
+
+console.log(pow(2,3))
