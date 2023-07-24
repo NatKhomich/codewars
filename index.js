@@ -15,7 +15,7 @@ function mySolution(str) {
     return newString;
 }
 
-mySolution();
+mySolution('hi');
 
 //Задача 3 Вернуть сумму чисел массива
 function sum(numbers) {
@@ -26,7 +26,7 @@ function sum(numbers) {
     return result;
 }
 
-sum()
+sum(1)
 
 //Задача 4 Вернуть время с полуночи в миллисекундах
 function past(h, m, s) {
@@ -54,14 +54,14 @@ function areYouPlayingBanjo(name) {
     }
 }
 
-areYouPlayingBanjo();
+areYouPlayingBanjo('nat');
 
 //Задача 7 Вернуть предложение из массива слов
 function smash(words) {
     return words.join(" ");
 }
 
-smash();
+smash(['привет'], ['как']);
 
 //Задача 8 Вернуть какой игрок выиграет
 const rps = (p1, p2) => {
@@ -133,11 +133,11 @@ function invert(array) {
     return array;
 }
 
-invert();
+invert([1, -6]);
 
 const inv = array => array.map(el => el *= -1)
 
-inv()
+inv([1, -6])
 
 //Задача 16 За 1км выпивает 0.5 литра. Узнать сколько выпьет и окр до целого числа
 function litres(time) {
@@ -148,7 +148,7 @@ litres();
 
 //Задача 17 Если число положительное вернуть отрицательное
 function makeNegative(num) {
-  return num > 0 ? -num : num
+    return num > 0 ? -num : num
 }
 
 makeNegative();
@@ -175,11 +175,11 @@ function noSpace(x) {
     return x.replace(/\s/g, "");
 }
 
-noSpace();
+noSpace('привет как дела');
 
 //Задача 21 Четное число * на 8, нечетное на 9
 function simpleMultiplication(number) {
-    return  number % 2 === 0 ? number * 8 : number * 9
+    return number % 2 === 0 ? number * 8 : number * 9
 }
 
 simpleMultiplication();
@@ -187,7 +187,7 @@ simpleMultiplication();
 //Задача 22
 function points(games) {
     let points = 0;
-    for ( let i = 0; i < games.length; i++) {
+    for (let i = 0; i < games.length; i++) {
         let each = games[i].split(":");
         if (each[0] > each[1]) {
             points += 3;
@@ -200,7 +200,7 @@ function points(games) {
     return points;
 }
 
-points();
+points(1);
 
 //Задача 23
 function rentalCarCost(d) {
@@ -228,21 +228,21 @@ function sumMix(x) {
     return sum;
 }
 
-sumMix();
+sumMix('1');
 
 //Задача 25 Разбить строку на массив слов
 function stringToArray(string) {
     return string.split(" ");
 }
 
-stringToArray();
+stringToArray('привет как дела');
 
 //Задача 26 Перемножить массив
 function grow(x) {
     return x.reduce((a, b) => a * b);
 }
 
-grow();
+grow([1, 2, 5]);
 
 //Задача 27 Вернуть к какому кварталу принадлежит месяц
 const quarterOf = (month) => {
@@ -284,7 +284,7 @@ function positiveSum(arr) {
     return sum;
 }
 
-positiveSum();
+positiveSum([1, 2, 8, -5]);
 
 //Задача 30 Объем прямоугольного параллелепипеда
 function getVolumeOfCuboid(length, width, height) {
@@ -321,7 +321,7 @@ function removeExclamationMarks(s) {
     return s.replace(/!/g, "");
 }
 
-removeExclamationMarks();
+removeExclamationMarks('привет! как дела!');
 
 //Задача 34 Вернуть нужную строку (лепестки)
 function howMuchILoveYou(nbPetals) {
@@ -361,7 +361,7 @@ function removeChar(str) {
     return str.slice(1, -1);
 }
 
-removeChar();
+removeChar('привет');
 
 //Задача 38 Найти индекс массы тела и вернуть результат
 function bmi(weight, height) {
@@ -519,7 +519,7 @@ function maps(x) {
     return x.map((el) => el * 2);
 }
 
-maps();
+maps([2, 4, 5]);
 
 //Задача 51 Число в строку
 function numberToString(num) {
@@ -547,7 +547,7 @@ function findDifference(a, b) {
     return Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
 }
 
-findDifference();
+findDifference(20, 10);
 
 //Задача 54 Перевести км/ч в м/с и округлить до меньшего целого
 function cockroachSpeed(s) {
@@ -565,14 +565,14 @@ function repeatStr(n, s) {
     return result;
 }
 
-repeatStr();
+repeatStr(4, 1);
 
 //или
-function repeatStr1(n, s) {
+/*function repeatStr1(n, s) {
     return s.repeat(n);
 }
 
-repeatStr1();
+repeatStr1(4,1);*/
 
 //Задача 56 Отсортировать массив и вернуть единственое число отличное от всех элементов массива
 function stray(numbers) {
@@ -584,7 +584,7 @@ function stray(numbers) {
     }
 }
 
-stray();
+stray([1, 2, 1]);
 
 //Задача 57 Вернуть true если одно число положительное, другое отрицательное
 function plusMinus(flower1, flower2) {
@@ -599,7 +599,7 @@ function check(a, x) {
     return a.includes(x);
 }
 
-check();
+check([1, 2, 3], 3);
 
 //Задача 59 Ф-я возвращ строку привет мир
 function greet2(world) {
@@ -616,7 +616,7 @@ function doubleChar(str) {
     return newStr;
 }
 
-doubleChar();
+doubleChar('привет');
 
 //Задача 61 Удалить каждый второй элемент массива
 function removeEveryOther(arr) {
@@ -626,14 +626,14 @@ function removeEveryOther(arr) {
     return arr;
 }
 
-removeEveryOther();
+removeEveryOther([1, 2, 5]);
 
 //Задача 62 Отсортировать массив по длине строки
 function sortByLength(array) {
     return array.sort((a, b) => a.length - b.length);
 }
 
-sortByLength();
+sortByLength(['привет как дела']);
 
 //Задача 63 Определить существует ли треугольник
 function isTriangle(a, b, c) {
@@ -652,7 +652,7 @@ function betterThanAverage(classPoints, yourPoints) {
     return yourPoints > average;
 }
 
-betterThanAverage();
+betterThanAverage([1, 2, 3], 5);
 
 //Задача 65 Найти количество совпадений letter в строке str
 function strCount(str, letter) {
@@ -665,7 +665,7 @@ function strCount(str, letter) {
     return result;
 }
 
-strCount();
+strCount('привет', 1);
 
 //Задача 66 Найти наибольший результат используя *+()
 function expressionMatter(a, b, c) {
@@ -698,7 +698,7 @@ function findSmallestInt(args) {
     return result;
 }
 
-findSmallestInt();
+findSmallestInt([1, 3, 6, 4]);
 
 //Задача 69 Найти needle в массиве
 function findNeedle(haystack) {
@@ -709,14 +709,14 @@ function findNeedle(haystack) {
     }
 }
 
-findNeedle();
+findNeedle(['hi, needle']);
 
 //Задача 70 Перемножить числа в массиве
 function multiply(x) {
     return x.reduce((a, b) => a * b);
 }
 
-multiply();
+multiply([1, 4, 7]);
 
 //Задача 71 Отсортировать массив по возрастанию, если null вернуть []
 function solution(nums) {
@@ -727,7 +727,7 @@ function solution(nums) {
     }
 }
 
-solution();
+solution(null);
 
 //Задача 72 Посчитать количество true в массиве
 function countSheep1(arrayOfSheep) {
@@ -740,14 +740,14 @@ function countSheep1(arrayOfSheep) {
     return result;
 }
 
-countSheep1();
+countSheep1(true);
 
 //Задача 74 Удалить гласные из строки
 function shortcut(string) {
     return string.replace(/[aeiou]/g, "");
 }
 
-shortcut();
+shortcut('привет');
 
 //Задача 75 Найти макс и мин чисто в массиве
 let min = function (list) {
@@ -765,7 +765,7 @@ function highAndLow(numbers) {
     return max + " " + min;
 }
 
-highAndLow();
+highAndLow('1,4,7');
 
 //Задача 77 Вернуть error если строка, если число *50+6
 function problem(x) {
@@ -807,7 +807,7 @@ function findAverage(array) {
     }
 }
 
-findAverage();
+findAverage([]);
 
 //Задача 81 Сравнить первый и последний символ beast и dish
 function feast(beast, dish) {
@@ -815,7 +815,7 @@ function feast(beast, dish) {
         beast[beast.length - 1] === dish[dish.length - 1];
 }
 
-feast();
+feast(1, 4);
 
 //Задача 82 Вернуть true если кажд число массива меньше limit
 function smallEnough(a, limit) {
@@ -827,7 +827,7 @@ function smallEnough(a, limit) {
     return true;
 }
 
-smallEnough();
+smallEnough([1, 2], 6);
 
 //Задача 83 Вернуть массив значений от integer до limit кратных integer
 function findMultiples(integer, limit) {
@@ -838,7 +838,7 @@ function findMultiples(integer, limit) {
     return result;
 }
 
-console.log(findMultiples(15, 80))
+findMultiples(15, 80)
 
 //Задача 84 Узнать нужно ли множественное число
 function plural(n) {
@@ -860,21 +860,21 @@ function DNAtoRNA(dna) {
     return str;
 }
 
-DNAtoRNA();
+DNAtoRNA('TTT');
 
 //или
 function DNAtoRNA1(dna) {
     return dna.replace(/T/g, 'U');
 }
 
-DNAtoRNA1();
+DNAtoRNA1('TTT');
 
 //или (разобрать)
 function DNAtoRNA2(dna) {
     return dna.split("T").join("U");
 }
 
-DNAtoRNA2();
+DNAtoRNA2('TTT');
 
 //Задача 86 Вернуть строку по условиям
 function peopleWithAgeDrink(old) {
@@ -918,14 +918,14 @@ function countPositivesSumNegatives(input) {
     return result;
 }
 
-countPositivesSumNegatives();
+countPositivesSumNegatives(1, 4, 6, -6);
 
 //Задача 89 Вернуть строку в обратном порядке 'I am an expert at this'/'this at expert an am I'
 function reverse(string) {
     return string.split(' ').reverse().join(' ');
 }
 
-reverse();
+reverse('I am an expert at this');
 
 //Задача 90 Вернуть 5 без использования чисел и +-*/
 function unusualFive() {
@@ -946,7 +946,7 @@ function disemvowel(str) {
     return str.replace(/[aeiou]/gi, '')
 }
 
-disemvowel();
+disemvowel('привет');
 
 //Задача 93 Вернуть строку в зависимости от условия
 function mouthSize(animal) {
@@ -964,7 +964,7 @@ function correct(string) {
     return string.replace(/5/gi, 'S').replace(/0/gi, 'O').replace(/1/gi, 'I')
 }
 
-correct();
+correct('1,5,7');
 
 //Задача 95 Вывести оценку по вводным данным
 function finalGrade(exam, projects) {
@@ -986,7 +986,7 @@ function reverseList(list) {
     return list.reverse();
 }
 
-reverseList();
+reverseList([1, 5, 8]);
 
 //Задача 97 Найти длину самого короткого слова в строке
 function findShort(s) {
@@ -996,7 +996,7 @@ function findShort(s) {
     return res[0].length;
 }
 
-findShort();
+findShort('привет');
 
 //Задача 98 Вернуть нужное значение при вводных
 function getGrade(s1, s2, s3) {
@@ -1034,7 +1034,7 @@ function abbrevName(name) {
     return name.toUpperCase().split(' ').map(element => element[0]).join('.');
 }
 
-abbrevName();
+abbrevName('Khomich Natalia');
 
 //Задача 102 Перевести строку в цифры 0 и 1
 function fakeBin(x) {
@@ -1047,7 +1047,7 @@ function fakeBin(x) {
     return res;
 }
 
-fakeBin();
+fakeBin('привет');
 
 //Задача 103 Если сумма эл массива четная вернуть 'even', если нечетная 'odd'
 function oddOrEven(array) {
@@ -1059,7 +1059,7 @@ function oddOrEven(array) {
     else return 'odd';
 }
 
-oddOrEven();
+oddOrEven([1, 4, 7]);
 
 //Задача 104 Найти сумму переменных
 let laLigaGoals = 43
@@ -1123,7 +1123,7 @@ function digitize(n) {
     return n.toString().split("").reverse().map(Number)
 }
 
-digitize()
+digitize(1234)
 
 //Задача 110 Сделать в строке строчные буквы заглавными и наоборот
 String.prototype.toAlternatingCase = function () {
@@ -1132,7 +1132,7 @@ String.prototype.toAlternatingCase = function () {
 }
 
 //рекурсия
-function pow (x, n) {
+function pow(x, n) {
     if (n === 1) {
         return x
     } else {
@@ -1140,4 +1140,48 @@ function pow (x, n) {
     }
 }
 
-console.log(pow(2,3))
+pow(2, 3)
+
+//
+function greetL(language) {
+    let lan = {
+        english: 'Welcome',
+        czech: 'Vitejte',
+        danish: 'Velkomst',
+        dutch: 'Welkom',
+        estonian: 'Tere tulemast',
+        finnish: 'Tervetuloa',
+        flemish: 'Welgekomen',
+        french: 'Bienvenue',
+        german: 'Willkommen',
+        irish: 'Failte',
+        italian: 'Benvenuto',
+        latvian: 'Gaidits',
+        lithuanian: 'Laukiamas',
+        polish: 'Witamy',
+        spanish: 'Bienvenido',
+        swedish: 'Valkommen',
+        welsh: 'Croeso'
+    }
+    for (let key in lan) {
+        if (key === language) {
+            return lan[key]
+        }
+    }
+    return lan['english']
+}
+
+//вернуть первые 2 буквы слова в массиве
+function whoIsPaying(name){
+    if (name.length <= 2) {
+        return [name];
+    }
+    else {
+        const newName = name.substring(0, 2);
+        return [name, newName];
+    }
+}
+
+
+console.log(whoIsPaying('Melania'))
+console.log(whoIsPaying('M'))
