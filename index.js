@@ -8,25 +8,27 @@ mango();
 
 //Задача 2 Перебрать эл строки в обр порядке "red">"der"
 function mySolution(str) {
-    let newString = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        newString += str[i];
-    }
-    return newString;
+    return str.split('').reverse().join('')
 }
 
-mySolution('hi');
+mySolution('red')
 
 //Задача 3 Вернуть сумму чисел массива
 function sum(numbers) {
-    let result = 0;
+    let res = 0
     for (let i = 0; i < numbers.length; i++) {
-        result += numbers[i];
+        res += numbers[i]
     }
-    return result;
+    return res
 }
 
-sum(1)
+sum([1, 4, 5])
+
+function sum2(numbers) {
+    return numbers.reduce((el, acc) => el + acc)
+}
+
+sum2([1, 4, 5])
 
 //Задача 4 Вернуть время с полуночи в миллисекундах
 function past(h, m, s) {
@@ -133,9 +135,9 @@ function invert(array) {
     return array;
 }
 
-invert([1, -6]);
+invert([1, -6])
 
-const inv = array => array.map(el => el *= -1)
+const inv = array => array.map(el => -el)
 
 inv([1, -6])
 
@@ -744,10 +746,10 @@ countSheep1(true);
 
 //Задача 74 Удалить гласные из строки
 function shortcut(string) {
-    return string.replace(/[aeiou]/g, "");
+    return string.replace(/[aeiouаяюоеёэиы]/gi, "");
 }
 
-shortcut('привет');
+shortcut('привет hey hey')
 
 //Задача 75 Найти макс и мин чисто в массиве
 let min = function (list) {
@@ -851,30 +853,23 @@ plural();
 function DNAtoRNA(dna) {
     let str = '';
     for (let i = 0; i < dna.length; i++) {
-        if (dna [i] === 'T') {
+        if (dna[i] === 'T') {
             str += 'U';
         } else {
-            str += dna [i];
+            str += dna[i];
         }
     }
     return str;
 }
 
-DNAtoRNA('TTT');
+DNAtoRNA('Talk tom')
 
 //или
 function DNAtoRNA1(dna) {
     return dna.replace(/T/g, 'U');
 }
 
-DNAtoRNA1('TTT');
-
-//или (разобрать)
-function DNAtoRNA2(dna) {
-    return dna.split("T").join("U");
-}
-
-DNAtoRNA2('TTT');
+DNAtoRNA1('Talk tom');
 
 //Задача 86 Вернуть строку по условиям
 function peopleWithAgeDrink(old) {
@@ -943,10 +938,10 @@ zeroFuel();
 
 //Задача 92 Убрать все гласные из строки, кроме y
 function disemvowel(str) {
-    return str.replace(/[aeiou]/gi, '')
+    return str.replace(/[aeiouаеёиоыюя]/gi, '')
 }
 
-disemvowel('привет');
+console.log(disemvowel('привет уна hey hey'))
 
 //Задача 93 Вернуть строку в зависимости от условия
 function mouthSize(animal) {
@@ -1031,7 +1026,7 @@ sumDigits();
 
 //Задача 101 Из фамилии и имени сделать аббревеатуру разделенную точкой. Natalia Khomich => N.K
 function abbrevName(name) {
-    return name.toUpperCase().split(' ').map(element => element[0]).join('.');
+    return name.toUpperCase().split(' ').map(el => el[0]).join('.');
 }
 
 abbrevName('Khomich Natalia');
@@ -1172,16 +1167,48 @@ function greetL(language) {
 }
 
 //вернуть первые 2 буквы слова в массиве
-function whoIsPaying(name){
+function whoIsPaying(name) {
     if (name.length <= 2) {
         return [name];
-    }
-    else {
+    } else {
         const newName = name.substring(0, 2);
         return [name, newName];
     }
 }
 
+whoIsPaying('Melania')
+whoIsPaying('M')
 
-console.log(whoIsPaying('Melania'))
-console.log(whoIsPaying('M'))
+//'abcdef' => ['AbCdEf', 'aBcDeF']
+
+function capitalize(s) {
+    let even = ''
+    let odd = ''
+    for (let i = 0; i < s.length; i++) {
+        if (i % 2 === 0) {
+            even += s[i].toUpperCase()
+            odd += s[i]
+        } else {
+            even += s[i]
+            odd += s[i].toUpperCase()
+        }
+    }
+    return [even, odd]
+}
+
+capitalize('abcdef')
+
+function capitalize2(s) {
+    const odd = s.split("").map((l, i) => i % 2 !== 0 ? l.toUpperCase() : l).join("");
+    const even = s.split("").map((l, i) => i % 2 === 0 ? l.toUpperCase() : l).join("");
+    return [even, odd];
+}
+
+capitalize2('abcdef')
+
+//вернуть true если строка str заканчивается подстрокой ending
+function solutionStr(str, ending) {
+    return str.endsWith(ending)
+}
+
+solutionStr('asdf', 'df')
