@@ -1212,3 +1212,16 @@ function solutionStr(str, ending) {
 }
 
 solutionStr('asdf', 'df')
+
+//вернуть массив индексов заглавных букв в массиве
+const capitals = function (word) {
+    const res = []
+    for (let i = 0; i < word.length; i++) {
+        if(word[i] === word[i].toUpperCase()) {
+            res.push(i)
+        }
+    }
+    return res
+};
+
+capitals('CodEWaRs')
