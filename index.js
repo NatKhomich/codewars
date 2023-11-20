@@ -1225,3 +1225,9 @@ const capitals = function (word) {
 };
 
 capitals('CodEWaRs')
+
+//вернуть новый массив с числом элементов от 0 до n
+function take(arr, n) {
+    return arr.slice(0, n)
+}
+take([1,2,3,5,7], 3)
