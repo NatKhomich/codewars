@@ -1217,7 +1217,7 @@ solutionStr('asdf', 'df')
 const capitals = function (word) {
     const res = []
     for (let i = 0; i < word.length; i++) {
-        if(word[i] === word[i].toUpperCase()) {
+        if (word[i] === word[i].toUpperCase()) {
             res.push(i)
         }
     }
@@ -1230,4 +1230,35 @@ capitals('CodEWaRs')
 function take(arr, n) {
     return arr.slice(0, n)
 }
-take([1,2,3,5,7], 3)
+
+take([1, 2, 3, 5, 7], 3)
+
+//вернуть массив чисел от a до b
+function between(a, b) {
+    let arr = [];
+    for (let i = a; i <= b; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+
+between(1, 4)
+
+//сложить четные и нечетные числа в массиве
+function rowWeights(array) {
+    let even = 0
+    let odd = 0
+    let res = []
+    for (let i = 0; i < array.length; i++) {
+        if (i % 2 === 0) {
+            even += array[i]
+        } else {
+            odd += array[i]
+        }
+    }
+    res.push(even)
+    res.push(odd)
+    return res
+}
+
+rowWeights([29, 83, 67, 53, 19, 28, 96]) //[211,164]
