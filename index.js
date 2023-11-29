@@ -1248,7 +1248,6 @@ between(1, 4)
 function rowWeights(array) {
     let even = 0
     let odd = 0
-    let res = []
     for (let i = 0; i < array.length; i++) {
         if (i % 2 === 0) {
             even += array[i]
@@ -1256,9 +1255,13 @@ function rowWeights(array) {
             odd += array[i]
         }
     }
-    res.push(even)
-    res.push(odd)
-    return res
+    return [even, odd]
 }
 
 rowWeights([29, 83, 67, 53, 19, 28, 96]) //[211,164]
+
+//проверить, что в массиве arr содержится item
+function include(arr, item){
+    return arr.includes(item)
+}
+include([1,2,3], 4)
