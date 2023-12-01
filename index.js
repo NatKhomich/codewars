@@ -1265,3 +1265,10 @@ function include(arr, item){
     return arr.includes(item)
 }
 include([1,2,3], 4)
+
+//удалить нули из числа в конце
+function noBoringZeros(n) {
+    return n === 0 ? 0 : parseFloat(n.toString().replace(/0+$/, ''));
+}
+
+noBoringZeros(150000)
