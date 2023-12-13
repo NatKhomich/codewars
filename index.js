@@ -1261,10 +1261,11 @@ function rowWeights(array) {
 rowWeights([29, 83, 67, 53, 19, 28, 96]) //[211,164]
 
 //проверить, что в массиве arr содержится item
-function include(arr, item){
+function include(arr, item) {
     return arr.includes(item)
 }
-include([1,2,3], 4)
+
+include([1, 2, 3], 4)
 
 //удалить нули из числа в конце
 function noBoringZeros(n) {
@@ -1272,3 +1273,26 @@ function noBoringZeros(n) {
 }
 
 noBoringZeros(150000)
+
+//оставить в массиве только числа
+function filter_list(l) {
+    return l.filter(el => typeof el === 'number')
+}
+
+filter_list([1, 2, 'a', 'b'])
+
+//проверить что pin состоит из 4 или 6 чисел
+function validatePIN(pin) {
+    if (pin.length === 4 || pin.length === 6) {
+        for (let i = 0; i < pin.length; i++) {
+            if (isNaN(parseInt(pin[i]))) {
+                return false;
+            }
+        }
+        return true
+    } else {
+        return false
+    }
+}
+
+validatePIN("12345")
