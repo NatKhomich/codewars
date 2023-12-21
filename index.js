@@ -1296,3 +1296,10 @@ function validatePIN(pin) {
 }
 
 validatePIN("12345")
+
+//найти мин и макс число в массиве
+function minMax(arr) {
+    return [Math.min(...arr), Math.max(...arr)]
+}
+
+minMax([1, 2, 3, 4, 5])
