@@ -1303,3 +1303,9 @@ function minMax(arr) {
 }
 
 minMax([1, 2, 3, 4, 5])
+
+//преобразовать число в ASCII
+function getChar(c){
+    return String.fromCharCode(c);
+}
+getChar(1)
