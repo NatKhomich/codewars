@@ -1309,3 +1309,14 @@ function getChar(c){
     return String.fromCharCode(c);
 }
 getChar(1)
+
+//найти среднее арифметическое
+var findAverage = function (nums) {
+    let res = 0
+    for (let i = 0; i<nums.length; i++) {
+        res += nums[i]
+    }
+    return res / nums.length
+}
+
+findAverage([1,2,3,6])
