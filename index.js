@@ -1320,3 +1320,18 @@ var findAverage = function (nums) {
 }
 
 findAverage([1,2,3,6])
+
+//узнать количество лет для достижения desired
+function calculateYears(principal, interest, tax, desired) {
+    if(principal === desired) {
+        return 0
+    } else {
+        for (let i = 1; i < desired; i++) {
+            let profit = (principal * interest) - (principal * interest * tax)//41p
+            principal += profit
+            if(principal>=desired) {
+                return i
+            }
+        }
+    }
+}
