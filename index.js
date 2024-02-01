@@ -1335,3 +1335,12 @@ function calculateYears(principal, interest, tax, desired) {
         }
     }
 }
+
+calculateYears(1000, 0,12,  1200)
+
+//поменять слова в строке местами
+function nameSuffle(str){
+    return str.split(' ').reverse().join(' ')
+}
+
+nameSuffle('john McClane')
