@@ -1344,3 +1344,17 @@ function nameSuffle(str){
 }
 
 nameSuffle('john McClane')
+
+//найти сумму последовательности чисел
+const sequenceSum = (begin, end, step) => {
+    if(begin > end) {
+        return 0
+    } else {
+        let res = 0
+        for (let i = begin; i <= end; i+= step) {
+            res += i
+        }
+        return res
+    }
+};
+sequenceSum(2, 4, 1)
