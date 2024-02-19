@@ -1358,3 +1358,9 @@ const sequenceSum = (begin, end, step) => {
     }
 };
 sequenceSum(2, 4, 1)
+
+//вернуть строку из эл массива
+function printArray(array){
+    return array.join();
+}
+printArray([1,4,5,6])
