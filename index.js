@@ -1364,3 +1364,15 @@ function printArray(array){
     return array.join();
 }
 printArray([1,4,5,6])
+
+//вернуить массив слов и их длину
+function addLength(str) {
+    return str.split(' ').map(el => el + ' ' + el.length)
+}
+addLength('apple lemon')
+
+//вернуть строку составив предложение с помощью объекта
+function animal(obj){
+    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
+}
+animal({color: 'black', name: 'dog', legs: 4})
