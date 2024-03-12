@@ -1376,3 +1376,9 @@ function animal(obj){
     return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
 }
 animal({color: 'black', name: 'dog', legs: 4})
+
+//Задача 12 Вернуть yes если true и no если false
+const boolToYesNo=(bool)=> {
+    return bool ? 'yes' : 'no'
+}
+boolToYesNo(false)
