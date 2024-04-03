@@ -1382,3 +1382,9 @@ const boolToYesNo=(bool)=> {
     return bool ? 'yes' : 'no'
 }
 boolToYesNo(false)
+
+//вернуть true если в массиве есть число x
+function check(a,x){
+    return a.includes(x)
+}
+check([1,2,3], 3)
