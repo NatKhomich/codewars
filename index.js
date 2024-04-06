@@ -1388,3 +1388,32 @@ function check(a,x){
     return a.includes(x)
 }
 check([1,2,3], 3)
+
+//вернуть сумму двух самых больших чисел в массиве
+function largestPairSum (numbers) {
+    let sortArr = numbers.sort((a,b) => b-a)
+    return sortArr[0] += sortArr[1]
+}
+
+//вернуть сумму чисел от n до m с шагом n //sumMul(2,9)  2+4+6+8 = 20
+function sumMul(n,m){
+    let res = 0
+    if(m <=0 || n<=0) {
+        return "INVALID"
+    } else {
+        for(let i = n; i< m; i+=n) {
+            res += i
+        }
+        return res
+    }
+}
+
+sumMul(2,9)
+
+//найти уникальное число в массиве
+function findUniq(arr) {
+    arr.sort((a, b)=> a - b);
+    return arr[0] === arr[1] ? arr.pop() : arr[0]
+}
+
+findUniq([ 1, 1, 1, 2, 1, 1 ])
